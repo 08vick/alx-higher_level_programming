@@ -10,7 +10,7 @@
 */
 int check_cycle(listint *list)
 {
-listint_t *turtlee, *hare;
+listint_t *turtle, *hare;
 
 if (list == NULL || list->next == NULL)
 return (0);
@@ -18,12 +18,12 @@ return (0);
 turtle = list->next;
 hare = list->next->next;
 
-while (turtlee && hare && hare->next)
+while (turtle && hare && hare->next)
 {
-if (turtlee == hare)
+if (turtle == hare)
 return (1);
 
-turtlee = turtlee->next;
+turtle = turtle->next;
 hare = hare->next->next;
 }
 
