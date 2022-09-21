@@ -5,4 +5,3 @@ for digit1 in range(0, 9):
             print("{:d}{:d}".format(digit1, digit2))
             break
         print("{:d}{:d}".format(digit1, digit2), end=", ")
-
